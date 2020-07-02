@@ -40,9 +40,9 @@ with open(sys.argv[1],'r') as myfile:
 		
 		# write out to a file + create new if file exists
 		i = 0
-		while os.path.exists("dos-output%s.txt" % i):
+		while os.path.exists("resolved-output%s.txt" % i):
 			i += 1
-		f = open("dos-output%s.txt" % i, "w")
+		f = open("resolved-output%s.txt" % i, "w")
 		for line in domain_only:
 			f.write(line)
 			f.write('\n')
