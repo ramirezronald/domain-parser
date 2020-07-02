@@ -40,9 +40,9 @@ with open(sys.argv[1],'r') as myfile:
 		
 		# write out to a file + create new if file exists
 		i = 0
-		while os.path.exists("script_output%s.txt" % i):
+		while os.path.exists("domain-output%s.txt" % i):
 			i += 1
-		f = open("script_output%s.txt" % i, "w")
+		f = open("domain-output%s.txt" % i, "w")
 		for line in domain_only:
 			f.write(line)
 			f.write('\n')
