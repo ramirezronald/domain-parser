@@ -6,7 +6,7 @@
 get your list of domains ready. 
 this script will parse out ANY of the following domains:
 
-* *.google.com/*
+* \*.google.com/*
 * *.google.com
 * *.google.com/
 * .google.com/
@@ -47,13 +47,29 @@ python3 resolv.py script_outtput.txt >> new-domains.txt
 
 #### Step 4 
 
-finally, take the new-domains.txt file and run it with the resolver-cleanup.py program
+now, take the new-domains.txt file and run it with the resolver-cleanup.py program
 
 ```python
 python3 resolver-cleanup.py new-domains.txt
 ```
 
 you are now set and ready to use the new file generated from step 4 and will only include the list of domains that were resolved and will also delete any duplicates. 
+
+#### Step 5 
+
+finally, take the new list generated from Step 4 and run the following program "re-format-domains.py" to appened the following wildcards/chars: 
+
+* \*.google/*
+* *.google
+* google.com/*
+* google.com
+
+
+```python
+python3 re-format-domains.py new-domains.txt
+```
+
+you should now see the following file "re-format-output.txt" created with the re-formating of the domains 
 
 
 
