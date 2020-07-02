@@ -4,7 +4,7 @@
 
 #### Step 1 
 get your list of domains ready. 
-this script will parse out the following domains  
+this script will parse out ANY of the following domains:
 
 * *.google.com/*
 * *.google.com
@@ -18,7 +18,9 @@ this script will parse out the following domains
 and will return the following (removing any duplicates):
 * google.com
 
-to run the script do the following:
+and so on ... you get the idea!
+
+now to run the script do the following:
 
 ```python
 python3 domain-cleanup.py domains.txt
