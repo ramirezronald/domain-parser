@@ -23,8 +23,17 @@ and so on ... you get the idea!
 now to run the script do the following:
 
 ```python
-python3 domain-cleanup.py domains.txt
+python3 domain-cleanup-v2.py domains.txt
 ```
+**Note!** Version 2 will match the full domain url:  
+
+* google.com/my/cool/site
+
+### vs.   
+
+* google.com
+
+If you want to match the second option, use domain-cleanup.py and NOT the version 2: domain-cleanup-v2.py
 
 this should now create a script_output.txt with the domains it cleaned up!
 
