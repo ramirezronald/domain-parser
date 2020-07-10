@@ -59,8 +59,9 @@ python3 resolv.py script_outtput.txt >> new-domains.txt
 now, take the new-domains.txt file and run it with the resolver-cleanup.py program
 
 ```python
-python3 resolver-cleanup.py new-domains.txt
+python3 resolver-cleanup-v2.py new-domains.txt
 ```
+**Note!** Version 2 of this program will remove unresolved entries and will clean up and output a new file with only resolved domains.
 
 you are now set and ready to use the new file generated from step 4 and will only include the list of domains that were resolved and will also delete any duplicates. 
 
